@@ -1,5 +1,5 @@
 {
-  "name": "altervision",
+  "name": "AlterVision",
   "description": "Skills da AlterVision sobre o MCP de fluxo, conversão, metas e uptime das lojas: escala do time, relatório em PDF, plano de ação para bater a meta e análise de conectividade.",
   "version": "1.0.0",
   "author": {
@@ -7,7 +7,11 @@
     "url": "https://painelalter.com"
   },
   "homepage": "https://painelalter.com",
+  "repository": "https://github.com/altervision-ltda/alterdash-plugin",
+  "documentationUrl": "https://github.com/altervision-ltda/alterdash-plugin/tree/main/plugins/altervision#readme",
+  "supportUrl": "https://painelalter.com/tickets",
   "privacyPolicyUrl": "https://painelalter.com/privacy-policy",
+  "termsOfServiceUrl": "https://painelalter.com/terms",
   "license": "LicenseRef-AlterVision-Proprietary",
   "keywords": ["varejo", "fluxo", "conversao", "metas", "escala", "uptime"]
 }
