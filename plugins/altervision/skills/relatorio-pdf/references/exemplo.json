@@ -1,0 +1,178 @@
+{
+  "titulo": "Fechamento de setembro · Rede Exemplo",
+  "periodo": "01/09/2026 a 30/09/2026",
+  "escopo": "12 lojas",
+  "relatorio": "Fechamento mensal",
+  "rede": "Rede Exemplo",
+  "siglas": "TC: taxa de conversão. PA: peças por atendimento. TM: ticket médio.",
+  "blocos": [
+    {
+      "tipo": "cartoes",
+      "itens": [
+        {
+          "rotulo": "Faturamento",
+          "valor": "R$ 1,25 mi",
+          "comparacao": "+4,2% contra agosto/2026",
+          "tendencia": "positivo"
+        },
+        {
+          "rotulo": "Fluxo",
+          "valor": "48.210",
+          "comparacao": "−3,1% contra agosto/2026",
+          "tendencia": "negativo"
+        },
+        {
+          "rotulo": "TC",
+          "valor": "18,4%",
+          "comparacao": "+1,2 p.p. contra agosto/2026",
+          "tendencia": "positivo"
+        },
+        {
+          "rotulo": "Uptime",
+          "valor": "97,8%",
+          "comparacao": "média das câmeras",
+          "tendencia": "neutro"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "texto": "A rede fechou em <b>82% da meta</b>. A conversão subiu <b>+1,2 p.p.</b>, mas o fluxo caiu <b>−3,1%</b>."
+    },
+    {
+      "tipo": "secao",
+      "rotulo": "Lojas",
+      "titulo": "Resultado por loja"
+    },
+    {
+      "tipo": "tabela",
+      "colunas": [
+        "Loja",
+        "Faturamento",
+        "TC",
+        "Status"
+      ],
+      "larguras": [
+        3,
+        2,
+        1.5,
+        2
+      ],
+      "alinhamento": [
+        "e",
+        "d",
+        "d",
+        "e"
+      ],
+      "linhas": [
+        [
+          "Loja Centro",
+          {
+            "valor": "R$ 312 mil",
+            "meta": "meta R$ 340 mil",
+            "tom": "negativo"
+          },
+          "19,2%",
+          {
+            "status": "atencao",
+            "texto": "Abaixo do ritmo"
+          }
+        ],
+        [
+          "Loja Shopping",
+          {
+            "valor": "R$ 405 mil",
+            "meta": "meta R$ 380 mil",
+            "tom": "positivo"
+          },
+          "21,0%",
+          {
+            "status": "ok",
+            "texto": "No ritmo"
+          }
+        ],
+        [
+          "Total",
+          "R$ 1,25 mi",
+          "18,4%",
+          ""
+        ]
+      ],
+      "linha_total": true,
+      "nota": "Meta = soma das metas diárias do período."
+    },
+    {
+      "tipo": "barras",
+      "itens": [
+        {
+          "rotulo": "Conversão",
+          "valor": 42000,
+          "texto": "+R$ 42 mil"
+        },
+        {
+          "rotulo": "Fluxo",
+          "valor": -61000,
+          "texto": "−R$ 61 mil"
+        },
+        {
+          "rotulo": "Ticket médio",
+          "valor": -12000,
+          "texto": "−R$ 12 mil"
+        }
+      ]
+    },
+    {
+      "tipo": "acao",
+      "itens": [
+        {
+          "o_que": "Reforçar 2 vendedores das 17h às 20h na Loja Centro",
+          "quem": "Gerente da loja",
+          "quanto": "R$ 18 mil/mês"
+        }
+      ]
+    },
+    {
+      "tipo": "qualidade",
+      "itens": [
+        "Loja Norte: câmera com 81% de uptime em 12/09 a 15/09; fluxo estimado.",
+        "Loja Sul sem integração de vendas: PA e preço médio fora."
+      ]
+    },
+    {
+      "tipo": "pagina",
+      "titulo": "Escala sugerida"
+    },
+    {
+      "tipo": "tabela",
+      "colunas": [
+        "Hora",
+        "Seg",
+        "Ter",
+        "Sáb"
+      ],
+      "linhas": [
+        [
+          "10h",
+          {
+            "valor": "2",
+            "fundo": "creme"
+          },
+          "2",
+          "3"
+        ],
+        [
+          "17h",
+          "3",
+          {
+            "valor": "4",
+            "fundo": "rosa_claro"
+          },
+          {
+            "valor": "5",
+            "fundo": "rosa"
+          }
+        ]
+      ]
+    }
+  ]
+}

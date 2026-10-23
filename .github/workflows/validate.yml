@@ -1,0 +1,38 @@
+name: Validate plugins
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate marketplace and plugins
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          claude plugin validate .
+          for p in plugins/*/; do claude plugin validate "$p"; done
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render example PDF
+        run: |
+          sudo apt-get install -y -q fonts-lato fonts-dejavu-core
+          pip install reportlab
+          python plugins/altervision/skills/relatorio-pdf/scripts/gerar_pdf.py \
+            plugins/altervision/skills/relatorio-pdf/references/exemplo.json exemplo.pdf
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: exemplo-pdf
+          path: exemplo.pdf

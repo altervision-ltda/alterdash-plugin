@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "altervision": {
+      "type": "http",
+      "url": "https://api.painelalter.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "alterdash",
+  "owner": {
+    "name": "AlterVision",
+    "url": "https://painelalter.com"
+  },
+  "metadata": {
+    "description": "Plugins da AlterVision para o Claude."
+  },
+  "plugins": [
+    {
+      "name": "altervision",
+      "source": "./plugins/altervision",
+      "description": "Skills da AlterVision sobre o MCP de fluxo, conversão, metas e uptime das lojas."
+    }
+  ]
+}
