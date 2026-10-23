@@ -1,5 +1,6 @@
 {
-  "name": "AlterVision",
+  "name": "altervision",
+  "displayName": "AlterVision",
   "description": "Skills da AlterVision sobre o MCP de fluxo, conversão, metas e uptime das lojas: escala do time, relatório em PDF, plano de ação para bater a meta e análise de conectividade.",
   "version": "1.0.0",
   "author": {
