@@ -1,0 +1,21 @@
+Copyright (c) 2026 AlterVision Ltda. All rights reserved.
+
+This repository, including the altervision plugin, its skills, scripts and documentation (the
+"Software"), is proprietary to AlterVision Ltda.
+
+Permission is granted to install and use the Software, unmodified, with Claude in order to access
+AlterVision services under a valid AlterVision account. No other right is granted. In particular,
+you may not copy, modify, distribute, sublicense or sell the Software or any derivative work,
+except as needed to install and run it as described above, without prior written permission from
+AlterVision Ltda.
+
+The AlterVision name, logo and visual identity, including the files under
+plugins/altervision/skills/relatorio-pdf/assets/, are trademarks of AlterVision Ltda. and are not
+licensed for any use other than generating reports with the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL ALTERVISION LTDA. BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+Questions: https://painelalter.com
