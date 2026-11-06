@@ -37,9 +37,15 @@ Check locally before pushing:
 
 ```bash
 npx -y @anthropic-ai/claude-code plugin validate .
+npx -y @anthropic-ai/claude-code plugin validate plugins/altervision
 ```
 
 ## Brand guide
 
-The visual identity is in `plugins/altervision/skills/relatorio-pdf/references/identidade-visual.md`,
-with the logo in `.../relatorio-pdf/assets/`.
+The visual identity is in
+[identidade-visual.md](plugins/altervision/skills/relatorio-pdf/references/identidade-visual.md),
+with the logo in [relatorio-pdf/assets/](plugins/altervision/skills/relatorio-pdf/assets/).
+
+## Support and license
+
+Support: <https://painelalter.com/tickets>. Proprietary, see [LICENSE](LICENSE).
