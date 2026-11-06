@@ -1,7 +1,7 @@
 # Identidade visual AlterVision
 
-Vale para todo relatório, imagem, PDF, página ou apresentação gerado com dados da AlterVision. Quando existe script oficial, o
-relatório sai sempre dele (aqui: `scripts/gerar_pdf.py`).
+Vale para todo relatório, imagem, PDF, página ou apresentação gerado com dados da AlterVision. As
+medidas do PDF estão em `layout-pdf.md`.
 
 ## Logo
 

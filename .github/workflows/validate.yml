@@ -21,18 +21,8 @@ jobs:
           claude plugin validate .
           for p in plugins/*/; do claude plugin validate "$p"; done
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Render example PDF
+      - name: Only allowed file types
         run: |
-          sudo apt-get install -y -q fonts-lato fonts-dejavu-core
-          pip install reportlab
-          python plugins/altervision/skills/relatorio-pdf/scripts/gerar_pdf.py \
-            plugins/altervision/skills/relatorio-pdf/references/exemplo.json exemplo.pdf
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: exemplo-pdf
-          path: exemplo.pdf
+          bad=$(git ls-files | grep -viE '\.(md|txt|json|ya?ml|png|jpe?g|gif|webp|ico)$' \
+            | grep -vxE 'LICENSE|\.gitignore' || true)
+          if [ -n "$bad" ]; then echo "Not allowed by the plugin directory:"; echo "$bad"; exit 1; fi

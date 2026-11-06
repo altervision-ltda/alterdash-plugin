@@ -5,7 +5,7 @@ Conecta o Claude ao MCP da AlterVision (`https://api.painelalter.com/mcp`) e adi
 | Skill | O que faz |
 | --- | --- |
 | `escala-do-time` | Escala de vendedores a partir do fluxo por hora e dia da semana e do tempo de atendimento |
-| `relatorio-pdf` | Relatório PDF A4 na identidade visual AlterVision (`scripts/gerar_pdf.py`) |
+| `relatorio-pdf` | Relatório PDF A4 na identidade visual AlterVision (layout em `references/layout-pdf.md`) |
 | `plano-de-acao-meta` | Quanto falta para a meta, de onde pode vir e o que fazer, com o valor de cada ação |
 | `conectividade-uptime` | Uptime das câmeras por loja e dia, horas sem dado e parcela do fluxo estimada |
 

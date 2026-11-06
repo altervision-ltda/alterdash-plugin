@@ -7,7 +7,7 @@ per store) and adds four skills:
 | Skill | What it does |
 |---|---|
 | `escala-do-time` | Builds the sellers' schedule from flow per hour and weekday and average service time |
-| `relatorio-pdf` | Branded A4 PDF report (`scripts/gerar_pdf.py`) |
+| `relatorio-pdf` | Branded A4 PDF report, drawn with reportlab from `references/layout-pdf.md` |
 | `plano-de-acao-meta` | How far the goal is, where the gap can come from, and what each action is worth |
 | `conectividade-uptime` | Camera uptime per store and day, hours with no data and share of estimated flow |
 
@@ -29,8 +29,8 @@ On first use of an AlterVision tool, Claude opens the painel OAuth login.
 1. Change the plugin under `plugins/altervision/`.
 2. Bump `version` in `plugins/altervision/.claude-plugin/plugin.json`; users only get an update
    when the version changes.
-3. Open a PR. CI runs `claude plugin validate` on the marketplace and the plugin and renders the
-   example PDF (downloadable from the run's artifacts).
+3. Open a PR. CI runs `claude plugin validate` on the marketplace and the plugin and checks that
+   every file is an allowed type.
 4. Merge to `main`. Users update with `claude plugin marketplace update alterdash`.
 
 Check locally before pushing:
@@ -39,6 +39,10 @@ Check locally before pushing:
 npx -y @anthropic-ai/claude-code plugin validate .
 npx -y @anthropic-ai/claude-code plugin validate plugins/altervision
 ```
+
+The plugin directory only accepts Markdown, text, JSON, YAML and PNG/JPEG/GIF/WebP/ICO images
+from organizations that aren't Verified (plus LICENSE, README and .gitignore). Don't add scripts,
+fonts or other binaries; describe what Claude should build in Markdown instead.
 
 ## Brand guide
 

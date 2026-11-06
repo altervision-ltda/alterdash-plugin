@@ -6,12 +6,13 @@ description: Gera um relatório em PDF (A4) na identidade visual AlterVision com
 # Gerar relatório PDF
 
 Monta um PDF A4 com os dados das lojas, seguindo a identidade visual AlterVision
-(`references/identidade-visual.md`). O layout sai sempre do script oficial desta skill; nunca desenhe o PDF
-por outro caminho nem invente outro visual.
+(`references/identidade-visual.md`). O layout segue sempre as medidas de `references/layout-pdf.md`;
+não invente outro visual.
 
 Antes de escrever o conteúdo, leia `references/identidade-visual.md` (cores, logo, fontes,
-estrutura e regras de escrita) e `references/formato-json.md` (o que o script aceita). Os caminhos
-são relativos ao diretório base desta skill.
+estrutura e regras de escrita), `references/layout-pdf.md` (medidas de cada parte da página) e
+`references/exemplo.json` (exemplo de conteúdo organizado em blocos). Os caminhos são relativos
+ao diretório base desta skill.
 
 ## 1. Entender o pedido
 
@@ -66,15 +67,14 @@ da tabela.
 
 ## 4. Gerar o PDF
 
-Grave a especificação em um arquivo JSON e rode o script (precisa de `reportlab`; se faltar,
-instale com `pip install reportlab`):
+Organize o conteúdo em blocos, como em `references/exemplo.json`. Depois escreva um script Python
+com `reportlab` (se faltar, instale com `pip install reportlab`) na pasta de trabalho do usuário,
+não no diretório da skill, que desenhe esses blocos com as medidas de `references/layout-pdf.md`
+e o logo de `assets/Logo_AlterVision_branco_transparente.png` (caminho absoluto a partir do
+diretório da skill). Rode o script e corrija até o PDF sair sem erro.
 
-```bash
-python3 <diretório da skill>/scripts/gerar_pdf.py especificacao.json relatorio.pdf
-```
-
-Para um gráfico que o script não desenha (ex.: linha diária de fluxo), gere uma PNG com matplotlib
-usando só as cores da diretriz e inclua com um bloco `imagem`.
+Para um gráfico que tabela e barras não resolvem (ex.: linha diária de fluxo), gere uma PNG com
+matplotlib usando só as cores da diretriz e inclua como imagem.
 
 Nomeie o arquivo de forma descritiva (`fechamento-setembro-2026-rede.pdf`) e salve na pasta de
 trabalho do usuário.
